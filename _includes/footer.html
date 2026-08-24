@@ -1,0 +1,22 @@
+{% assign lang = page.lang | default: "fi" %}
+<footer>
+  <div class="shell">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img class="footer-logo" src="/assets/images/vihreat-logo.png" alt="{% if lang == 'en' %}Green Party logo{% else %}Vihreiden logo{% endif %}">
+      </div>
+      <div class="footer-actions">
+        <nav class="footer-social" aria-label="{% if lang == 'en' %}Social media{% else %}Sosiaalinen media{% endif %}">
+          <a class="social-button" href="https://bsky.app/profile/zeip.fi" rel="me">Bluesky</a>
+          <a class="social-button" href="https://mastodon.social/@ZeiP" rel="me">Mastodon</a>
+          <a class="social-button" href="https://metapixl.com/ZeiP" rel="me">Pixelfed</a>
+          <a class="social-button" href="https://instagram.com/zeip" rel="me">Instagram</a>
+          <a class="social-button" href="https://facebook.com/jyripetteri.paloposki" rel="me">Facebook</a>
+        </nav>
+        <nav class="footer-links" aria-label="{% if lang == 'en' %}Footer{% else %}Alatunniste{% endif %}">
+          <a href="/{{ lang }}/rss.xml">RSS</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</footer>

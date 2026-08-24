@@ -1,0 +1,13 @@
+---
+permalink: /sitemap.xml
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{% assign all_docs = site.pages | concat: site.posts %}
+{% for doc in all_docs %}
+{% unless doc.url contains '/404.html' or doc.layout == 'redirect' %}
+  <url><loc>{{ site.url }}{{ doc.url }}</loc></url>
+{% endunless %}
+{% endfor %}
+</urlset>

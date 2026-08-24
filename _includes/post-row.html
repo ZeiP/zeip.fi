@@ -1,0 +1,16 @@
+{% assign lang = include.post.lang | default: "fi" %}
+{% assign theme = site.data.themes[include.post.theme] %}
+<article class="post-row">
+  <time datetime="{{ include.post.date | date_to_xmlschema }}">
+    {% if lang == "en" %}{{ include.post.date | date: "%-d %B %Y" }}{% else %}{{ include.post.date | date: "%-d.%-m.%Y" }}{% endif %}
+  </time>
+  <div>
+    <h3><a href="{{ include.post.url }}">{{ include.post.title }}</a></h3>
+    {% if include.post.excerpt %}
+      <p>{{ include.post.excerpt | strip_html | normalize_whitespace | truncate: 180 }}</p>
+    {% endif %}
+  </div>
+  {% if theme %}
+    <a class="tag" href="/{% if lang == 'en' %}en/themes{% else %}fi/teemat{% endif %}/{{ include.post.theme }}/">{{ theme[lang] }}</a>
+  {% endif %}
+</article>

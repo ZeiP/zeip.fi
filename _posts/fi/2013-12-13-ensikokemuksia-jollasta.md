@@ -1,0 +1,22 @@
+---
+layout: "post"
+title: "Ensikokemuksia Jollasta"
+lang: "fi"
+date: "2013-12-13T20:10:58+00:00"
+permalink: "/fi/blogi/2013-12-13_ensikokemuksia-jollasta/"
+theme: "technology"
+tags:
+  - "Jolla"
+translation_key: "d7-99"
+original_urls:
+  - "/artikkeli/ensikokemuksia-jollasta"
+  - "/node/99"
+  - "/fi/node/99"
+source: "d7"
+render_with_liquid: false
+---
+
+<p>Sain vihdoin pitkän odotuksen jälkeen uuden, uljaan Jollan kätösiini – saapumisilmoituksesta noutoon meni runsaat kaksikymmentä minuuttia, eli oli sitä taidettu vähän odotella... Nyt kun on muutaman päivän leikkinyt kapistuksella, voisi avata hivenen sitä, miltä tuo uunituore suomalaisen kännykkäteollisuuden pelastaja tuntuu.&nbsp;</p><h2>Käyttöliittymä ja ohjaus<br></h2><p>Käyttöliittymä pistää silmään jo alusta lähtien tyylikkäänä ja hyvännäköisenä. Puhelinta ensimmäistä kertaa käynnistäessä käyttäjälle esitetään lyhyt opastus puhelimen kontrolleihin, eli käytännössä eri pyyhkäisyihin ja ruudulla näkyviin vihjeisiin siitä, mitä toimintoja milloinkin on käytössä. Vastaavaa ei muistaakseni aiemmassa puhelimessani, Nokia N9:ssä, ollut, ja lyhyt opastus on oikeinkin tervetullut lisä.</p><p>Eri pyyhkäisyjä on selvästi enemmän kuin N9:ssä: sillä, pyyhkäisetkö ruudun sisällä vai sen ulkopuolelta on suuri merkitys toiminnon suhteen, ja tämän takia käyttö vaatii vähän totuttelua vanhojen tapojen karistamiseksi. Nopeasti käytöstä kuitenkin on tullut luontevaa ja ohjausmenetelmät tuntuvat mukavammilta kuin N9:ssä.</p><h2>Ohjelmistot ja toiminnallisuus</h2><p>Oletuksena näkyvillä on oma sovelluskauppansa, josta löytyvät Sailfishin natiivisovellukset. Näitä valitettavasti löytyy vasta muutamia (kuriositeettina mainittakoon, että Ilta-Sanomien ohjelma 
+löytyy jo, toisin kuin esimerkiksi hotspot-tuki...) Tosin kun nyt 
+katsoin sovelluskauppaa, spottasin heti useita ohjelmia joita ei vielä 
+toissapäivänä näkynyt, eli tarjonta paranee jatkuvasti.</p><p>Puhelimen omistakin toiminnoista moni asennetaan sovelluskaupan kautta: Sieltä löytyvät niin kalenteri, karttaohjelma, laskin kuin kellokin. Kyseessä ovat siis Jollan tekemät sovellukset, mutta käyttäjälle halutaan ilmeisesti antaa mahdollisuus olla asentamatta puhelimeensa tarpeettomia ominaisuuksia – omaan korvaani oikein hyvältä kuulostava ajatus! </p><p>Tässä vaiheessa Jollan omissakin sovelluksissa on vielä pieniä puutteita toiminnallisuuksien suhteen: Esimerkiksi kalenterisovellus ei mahdollista minkäänlaista kalentereiden synkkausta muihin järjestelmiin, mikä tekee kalenterista tässä vaiheessa melko turhan. Toivotaan että tällaiset puutteet korjaantuvat piakkoin – ohjelmiin on ainakin päivityksiä satanut hyvinkin aktiivisesti, eli toivoa on!</p><p>Toivoa kasvattaa myös yksi Jollan usein mainituistakin hienouksista, Android-sovellusten toimiminen alustalla. Tämä on erittäin olennainen lisä Sailfishin natiiviohjelmistoihin etenkin näin alkuvaiheessa käyttöjärjestelmän taivalta. Android-sovellusten asennus tapahtuu asentamalla ensin Yandex-sovelluskauppa puhelimeen ja sitten hakemalla sieltä halutut sovellukset. Yandexin sovelluskaupassa sovelluskirjo on hyvin paljon laajempi, mutta kaikkea ei sielläkään ole, valitettavasti. Google Playn sovelluskauppa, josta ne todelliset löydöt tehtäisiin, ei ole virallisesti puhelimeen saatavilla, joskin yllättäen joku on tämänkin puutteen jo saanut <a name="" target="" classname="" class="" href="http://jollafin.blogspot.fi/2013/11/play-store-for-jolla.html">korjattua</a>.</p><p>Yandexista löytyvistä sovelluksista useimmat toimivat hienosti: Löysin sieltä jo mm. Spotifyn, salasanahallintatyökalu aWalletin ja e-kirjojen lukuohjelma Aldikon. Valitettavasti osa Android-sovelluksista ei puhelimessa ainakaan tällä hetkellä toimi kunnolla: Yksikään noin kymmenestä call recorder -sovelluksesta ei toiminut, kuten ei myöskään viivakoodiskanneri, äänitallennin tai Foursquare-asiakasohjelma. <br></p><h2>Yhteenveto</h2><p>Kokonaisuutena olen tyytyväinen. Käyttöliittymä on tyylikäs ja toimiva, ja toiminnallisuudetkin parantuvat jatkuvasti. Kärsimättömälle en kuitenkaan Jollaa vielä suosittelisi; kokeilin tänään siirtää puhelinluettelon tiedot N9:stä Jollaan, ja päälle päin näytti siltä että synkronointi toimi hienosti – paitsi että jostain syystä ainakin yksi nimi puuttuu Jollan listasta edelleen. <br></p><p>Pieniä virheitä siis löytyy vielä, mutta toisin kuin N9:n kanssa tässä kohtaa lohdutuksena on se, että valmistaja on luvannut aktiivisesti kehittää alustaa. Odottelen mielenkiinnolla tulevia parannuksia :)<br></p>

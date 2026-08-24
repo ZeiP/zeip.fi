@@ -1,0 +1,19 @@
+---
+layout: default
+---
+{% assign lang_posts = site.posts | where: "lang", page.lang | where: "theme", page.theme_key %}
+<section class="page-hero">
+  <div class="shell">
+    <p class="eyebrow">{% if page.lang == "en" %}Theme{% else %}Teema{% endif %}</p>
+    <h1 class="page-heading">{{ page.title }}</h1>
+  </div>
+</section>
+<section class="section">
+  <div class="shell">
+    <div class="post-list">
+      {% for post in lang_posts %}
+        {% include post-row.html post=post %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

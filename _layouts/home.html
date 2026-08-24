@@ -1,0 +1,55 @@
+---
+layout: default
+---
+{% assign posts = site.posts | where: "lang", page.lang %}
+<section class="hero">
+  <div class="shell hero-grid">
+    <div>
+      {% if page.eyebrow %}<p class="eyebrow">{{ page.eyebrow }}</p>{% endif %}
+      <h1>{{ page.title }}</h1>
+      {% if page.description %}<p class="lede">{{ page.description }}</p>{% endif %}
+      <div class="actions">
+        <a class="button" href="{% if page.lang == 'en' %}/en/who/{% else %}/fi/kuka/{% endif %}">{% if page.lang == "en" %}Who{% else %}Kuka{% endif %}</a>
+        <a class="text-link" href="/{{ page.lang }}/blogi/">{% if page.lang == "en" %}Blog{% else %}Blogi{% endif %}</a>
+      </div>
+    </div>
+    {% if page.hero_image %}
+      <img class="portrait" src="{{ page.hero_image }}" alt="">
+    {% else %}
+      <div class="portrait-card" aria-hidden="true"><span>JP</span></div>
+    {% endif %}
+  </div>
+</section>
+{% if page.facts %}
+  <section class="intro-strip" aria-label="{% if page.lang == 'en' %}Profile summary{% else %}Tiivistelmä{% endif %}">
+    <div class="shell intro-grid">
+      {% for fact in page.facts %}
+        <div class="fact">
+          <small>{{ fact.label }}</small>
+          <strong>{{ fact.text }}</strong>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+{% endif %}
+<section class="section">
+  <div class="shell home-prose">
+    {{ content }}
+  </div>
+</section>
+<section class="section latest">
+  <div class="shell">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">{% if page.lang == "en" %}Latest{% else %}Viimeisimmät{% endif %}</p>
+        <h2>{% if page.lang == "en" %}Blog{% else %}Blogi{% endif %}</h2>
+      </div>
+      <a href="/{{ page.lang }}/blogi/">{% if page.lang == "en" %}All posts{% else %}Kaikki kirjoitukset{% endif %}</a>
+    </div>
+    <div class="post-list">
+      {% for post in posts limit: 5 %}
+        {% include post-row.html post=post %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

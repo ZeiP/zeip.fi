@@ -1,0 +1,23 @@
+{% assign lang = page.lang | default: "fi" %}
+{% assign nav = site.data.navigation[lang] %}
+<header class="site-header">
+  <div class="shell header-row">
+    <a class="identity" href="/{{ lang }}/">
+      <span class="identity-text"><strong>ZeiP</strong><span>Jyri-Petteri Paloposki</span></span>
+    </a>
+    <nav class="main-nav" aria-label="{% if lang == 'en' %}Main navigation{% else %}Päänavigaatio{% endif %}">
+      {% for item in nav %}
+        <a href="{{ item.url }}" {% if page.url == item.url or page.url contains item.url and item.url != "/" %}class="active"{% endif %}>{{ item.label }}</a>
+      {% endfor %}
+    </nav>
+    {% include language-switcher.html %}
+    <button class="mobile-menu" aria-controls="mobile-nav" aria-expanded="false">{% if lang == 'en' %}Menu{% else %}Valikko{% endif %}</button>
+  </div>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="{% if lang == 'en' %}Mobile navigation{% else %}Mobiilinavigaatio{% endif %}" hidden>
+    <div class="shell mobile-nav-inner">
+      {% for item in nav %}
+        <a href="{{ item.url }}">{{ item.label }}</a>
+      {% endfor %}
+    </div>
+  </nav>
+</header>

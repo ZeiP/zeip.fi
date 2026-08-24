@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="{{ page.lang | default: 'fi' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description | strip_html | normalize_whitespace | escape }}">
+  <link rel="stylesheet" href="/assets/site.css">
+  <script src="/assets/site.js" defer></script>
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  {% if page.translation_key %}
+    {% assign candidates = site.pages | concat: site.posts %}
+    {% for candidate in candidates %}
+      {% if candidate.translation_key == page.translation_key %}
+        <link rel="alternate" hreflang="{{ candidate.lang }}" href="{{ site.url }}{{ candidate.url }}">
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+</head>
+<body>
+  <a class="skip-link" href="#main-content">{% if page.lang == "en" %}Skip to main content{% else %}Hyppää pääsisältöön{% endif %}</a>
+  {% include header.html %}
+  <main id="main-content">
+    {{ content }}
+  </main>
+  {% include footer.html %}
+</body>
+</html>

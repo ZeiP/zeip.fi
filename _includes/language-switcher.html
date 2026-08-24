@@ -1,0 +1,16 @@
+{% assign other_lang = "en" %}
+{% assign other_label = "EN" %}
+{% if page.lang == "en" %}
+  {% assign other_lang = "fi" %}
+  {% assign other_label = "FI" %}
+{% endif %}
+{% assign other_url = "/" | append: other_lang | append: "/" %}
+{% if page.translation_key %}
+  {% assign candidates = site.pages | concat: site.posts %}
+  {% for candidate in candidates %}
+    {% if candidate.translation_key == page.translation_key and candidate.lang == other_lang %}
+      {% assign other_url = candidate.url %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+<a class="lang" href="{{ other_url }}">{{ other_label }}</a>

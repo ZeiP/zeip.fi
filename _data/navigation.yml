@@ -1,0 +1,28 @@
+fi:
+  - label: Etusivu
+    url: /fi/
+  - label: Kuka
+    url: /fi/kuka/
+  - label: Suosituksia
+    url: /fi/suosituksia/
+  - label: Kuntateemat
+    url: /fi/kuntateemat/
+  - label: Alueteemat
+    url: /fi/alueteemat/
+  - label: Blogi
+    url: /fi/blogi/
+  - label: Yhteys
+    url: /fi/yhteys/
+en:
+  - label: Home
+    url: /en/
+  - label: Who
+    url: /en/who/
+  - label: Municipal issues
+    url: /en/municipal-issues/
+  - label: County issues
+    url: /en/county-issues/
+  - label: Blog
+    url: /en/blogi/
+  - label: Contact
+    url: /en/form/contact/

@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<section class="page-hero">
+  <div class="shell">
+    {% if page.eyebrow %}<p class="eyebrow">{{ page.eyebrow }}</p>{% endif %}
+    <h1 class="page-heading">{{ page.title }}</h1>
+    {% if page.description %}<p class="deck">{{ page.description }}</p>{% endif %}
+  </div>
+</section>
+<section class="section page-content">
+  <div class="article-wrap article-body">
+    {{ content }}
+  </div>
+</section>

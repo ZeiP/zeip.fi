@@ -1,0 +1,18 @@
+technology:
+  fi: Teknologia
+  en: Technology
+politics:
+  fi: Politiikka
+  en: Politics
+travel:
+  fi: Matkailu
+  en: Travel
+finance:
+  fi: Talous
+  en: Finance
+testing:
+  fi: Testaus
+  en: Testing
+personal:
+  fi: Henkilökohtainen
+  en: Personal

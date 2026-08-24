@@ -1,0 +1,30 @@
+title: Jyri-Petteri Paloposki
+description: Jyri-Petteri Paloposki
+url: "https://www.zeip.fi"
+baseurl: ""
+timezone: Europe/Helsinki
+markdown: kramdown
+permalink: pretty
+exclude:
+  - d7_zeipeu-beforeremoval-20260810.sql
+  - extracted_db_dump/
+  - extract_mariadb_dump.py
+  - layout-prototype.html
+  - tools/
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .bundle/
+  - README.md
+  - build.yml
+  - 20250108_v_5386.jpg
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post

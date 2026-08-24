@@ -1,0 +1,9 @@
+{% if page.source and page.source != "manual" %}
+  <div class="source-note">
+    {% if page.lang == "en" %}
+      This article has been moved from an earlier site. The content is preserved from the source, with links adjusted where needed.
+    {% else %}
+      Tämä kirjoitus on siirretty aiemmalta sivustolta. Sisältö on säilytetty lähteestä, ja linkkejä on tarvittaessa päivitetty.
+    {% endif %}
+  </div>
+{% endif %}
